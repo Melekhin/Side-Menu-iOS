@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SideMenuTableViewCell" rowHeight="57" id="LqY-e7-lew" customClass="SideMenuTableViewCell" customModule="SideMenuTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LqY-e7-lew" id="pLh-ei-6N8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fF-HY-DjM">
+                        <rect key="frame" x="10" y="10" width="36" height="36"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlertMessageSideMenu" translatesAutoresizingMaskIntoConstraints="NO" id="lPC-Pd-Jcg">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lPC-Pd-Jcg" secondAttribute="trailing" id="7dc-Qy-cig"/>
+                            <constraint firstAttribute="width" secondItem="0fF-HY-DjM" secondAttribute="height" multiplier="1:1" id="DYw-jw-7wz"/>
+                            <constraint firstAttribute="height" constant="36" id="EcN-gP-lEh"/>
+                            <constraint firstAttribute="bottom" secondItem="lPC-Pd-Jcg" secondAttribute="bottom" id="F5h-Xs-urp"/>
+                            <constraint firstItem="lPC-Pd-Jcg" firstAttribute="top" secondItem="0fF-HY-DjM" secondAttribute="top" id="UGS-3B-o1E"/>
+                            <constraint firstItem="lPC-Pd-Jcg" firstAttribute="leading" secondItem="0fF-HY-DjM" secondAttribute="leading" id="mfI-VQ-fHl"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mc-WX-Qf9" userLabel="NameLabel">
+                        <rect key="frame" x="56" y="18" width="86.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3mc-WX-Qf9" secondAttribute="trailing" constant="10" id="0bP-z7-i50"/>
+                    <constraint firstItem="3mc-WX-Qf9" firstAttribute="leading" secondItem="0fF-HY-DjM" secondAttribute="trailing" constant="10" id="3aO-q3-DMZ"/>
+                    <constraint firstItem="0fF-HY-DjM" firstAttribute="baseline" secondItem="3mc-WX-Qf9" secondAttribute="firstBaseline" constant="12.5" symbolType="layoutAnchor" id="8i4-cb-4eo"/>
+                    <constraint firstItem="0fF-HY-DjM" firstAttribute="top" secondItem="pLh-ei-6N8" secondAttribute="top" constant="10" id="FIj-Pe-7s2"/>
+                    <constraint firstItem="0fF-HY-DjM" firstAttribute="leading" secondItem="pLh-ei-6N8" secondAttribute="leading" constant="10" id="TP9-iJ-gev"/>
+                    <constraint firstAttribute="bottom" secondItem="0fF-HY-DjM" secondAttribute="bottom" constant="10.5" id="iYK-Cm-VZf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageMenuView" destination="lPC-Pd-Jcg" id="gKf-ND-8wm"/>
+                <outlet property="nameLabel" destination="3mc-WX-Qf9" id="YVj-vD-6jk"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AlertMessageSideMenu" width="50" height="50"/>
+    </resources>
+</document>

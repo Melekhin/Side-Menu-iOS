@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationsViewController" customModule="SideMenuTable" customModuleProvider="target">
+            <connections>
+                <outlet property="notifiLabel" destination="G8g-fX-Kpr" id="xYY-XA-AWt"/>
+                <outlet property="receiveNotifiLabel" destination="pXe-AM-Def" id="ggc-6c-4wj"/>
+                <outlet property="tableView" destination="6qG-lg-4OF" id="IDd-8z-Tga"/>
+                <outlet property="view" destination="iN0-l3-epB" id="KzL-yO-nEM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8g-fX-Kpr" userLabel="NotfiLabel">
+                    <rect key="frame" x="0.0" y="70" width="375" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="lV5-b7-8Ve"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" allowsSelection="NO" rowHeight="57" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qG-lg-4OF">
+                    <rect key="frame" x="0.0" y="127" width="375" height="231"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="231" id="6CI-rf-2TM"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="WNx-iZ-0mq"/>
+                        <outlet property="delegate" destination="-1" id="mS7-0g-grd"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXe-AM-Def" userLabel="ReceiveNotifiLabel">
+                    <rect key="frame" x="10" y="358" width="355" height="57"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yoj-Ky-8Fn">
+                    <rect key="frame" x="16" y="435" width="343" height="29"/>
+                    <segments>
+                        <segment title="PUSH"/>
+                        <segment title="EMAIL"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yoj-Ky-8Fn" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="2Qb-QK-kVP"/>
+                <constraint firstItem="6qG-lg-4OF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6Aj-q2-UN8"/>
+                <constraint firstItem="G8g-fX-Kpr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Jb8-7G-le6"/>
+                <constraint firstItem="pXe-AM-Def" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="SWF-SO-2Vk"/>
+                <constraint firstItem="6qG-lg-4OF" firstAttribute="top" secondItem="G8g-fX-Kpr" secondAttribute="bottom" id="TDd-OF-CcA"/>
+                <constraint firstItem="pXe-AM-Def" firstAttribute="top" secondItem="6qG-lg-4OF" secondAttribute="bottom" id="bW0-sV-0lT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="G8g-fX-Kpr" secondAttribute="trailing" id="eYC-fk-VQt"/>
+                <constraint firstItem="pXe-AM-Def" firstAttribute="height" secondItem="G8g-fX-Kpr" secondAttribute="height" id="fmc-pn-XEC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pXe-AM-Def" secondAttribute="trailing" constant="10" id="gEZ-XG-jSh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6qG-lg-4OF" secondAttribute="trailing" id="gG2-b8-eaQ"/>
+                <constraint firstItem="yoj-Ky-8Fn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="kOr-fP-Ox5"/>
+                <constraint firstItem="G8g-fX-Kpr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="lse-Hs-GXy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yoj-Ky-8Fn" secondAttribute="bottom" id="sI0-ds-79X"/>
+                <constraint firstItem="yoj-Ky-8Fn" firstAttribute="top" secondItem="pXe-AM-Def" secondAttribute="bottom" constant="20" id="sWy-Rn-gRR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
