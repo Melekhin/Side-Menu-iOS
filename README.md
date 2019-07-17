@@ -9,3 +9,5 @@
 При нажатии кнопки 'back' слева в NavigationBar, происходит возврат на прошлый экран.
 
 ![Main Screen](https://github.com/Melekhin/Side-Menu-iOS/blob/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20-%202019-07-17%20at%2021.43.02.png)
+
+![Second Screen](https://github.com/Melekhin/Side-Menu-iOS/blob/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20-%202019-07-17%20at%2021.43.52.png)
