@@ -7,3 +7,5 @@
 
 Для навигации между экранами используется координатор, который хранит загруженный(-е) экран(-ы). 
 При нажатии кнопки 'back' слева в NavigationBar, происходит возврат на прошлый экран.
+
+![Main Screen](https://github.com/Melekhin/Side-Menu-iOS/blob/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20-%202019-07-17%20at%2021.43.02.png)
